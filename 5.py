@@ -4,5 +4,10 @@ import pickle, pprint
 
 fo = open("banner.p")
 data = pickle.load(fo)
-print data
-pprint.pprint(data)
+
+for i in data:
+    for j in i:
+        for k in range(j[1]):
+            print j[0],
+    print ""
+
